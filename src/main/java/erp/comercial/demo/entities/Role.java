@@ -3,10 +3,14 @@ package erp.comercial.demo.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="role")
+@Table(name = "roles")
 public class Role {
+
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private TipoUsuario tipo;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false, unique = true)
+    private RoleName name;
 }
