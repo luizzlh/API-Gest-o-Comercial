@@ -1,4 +1,4 @@
-package erp.gestao.comercial;
+package erp.comercial.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
